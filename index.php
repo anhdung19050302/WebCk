@@ -12,7 +12,7 @@
 
 <body>
 	<!--Thực hiện chức năng đăng nhập ở đây-->
-
+	<div>TEST</div>
 
 	
 	<div class="container">
