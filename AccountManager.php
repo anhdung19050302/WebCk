@@ -11,35 +11,8 @@
 </head>
 
 <body>
-	<!--Thực hiện chức năng đăng nhập ở đây-->
+	<!--Thực hiện chức năng quản lý tài khoản ở đây-->
 
-
-	
-	<div class="container">
-		<h3 class="mt-3 mb-3">Welcome! Hãy rê chuột lên chữ này</h3>
-		<button id="test" class="btn btn-primary">Hãy click vào đây</button>
-		<div class="my-3">
-			<a href="/admin/db.php">Xem database</a>
-		</div>
-		<div>
-			<!-- Sử dụng link tuyệt đối tính từ root, vì vậy có dấu / đầu tiên -->
-			<img src="/images/tdt-logo.png" />
-			<p>Đây là ảnh mẫu, lấy từ thư mục images tại web root.</p>
-		</div>
-
-		<p class="mt-3">Nội dung bên dưới được in bằng PHP</p>
-		<ul class="list-group">
-			<?php
-				for ($i = 0; $i < 20; $i++)
-				{
-					$number = $i + 1;
-					?>
-						<li class="list-group-item">Phần tử thứ <?= $i ?></li>
-					<?php
-				}
-			?>
-		</ul>
-	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
