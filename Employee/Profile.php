@@ -29,34 +29,97 @@
         <div class="col p-4">
             <h1 class="display-4">Thông tin nhân viên @tên nhân viên</h1>
             <div class="card">
+                
                 <h5 class="card-header font-weight-light">Hồ sơ</h5>
                 <div class="card-body">
-                    <!-- The first line takes photos and employee information -->
-                    <div class="container">
-                        <p>Ảnh đại diện</p>
+                    <!-- The first line takes photos and employee information -->                    
+                    <div class="container mt-3">                        
                         <!--avatar-->
-                        <div class="avatar-container">
+                        <div class="avatar-container media border p-3">
                             <!--show avatar-->
                             <label for="imageFile">
-                                <img src="../images/avatar.png" id="image" alt="avatar">
+                                <img src="../images/avatar.png" id="image" alt="avatar" class="mr-3 mt-3 rounded-circle" style="width:100px;">
                             </label>
-                            <!--<img src="" id="image" class="avatar uploaded" src="/imgae/avatar.png" alt="avatar">-->
                             <input type="file" name="input-img" id="imageFile" style="display: none;" onchange="chooseFile(this)" accept="image/gif, image/jpeg, image/png"> 
-                            <!--
-                                <button>Browse File</button>
-                                <input type="file" hidden>
-                            -->
-                        </div>
+                            
+                           
                         <div>
                             <!--proflie 1-->
                         </div>                        
+                            <div class="container">                            
+                                <form action="/action_page.php">
+                                    <div class="form-group">                                    
+                                        <label for="username">Tên nhân viên</label>
+                                        <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                                                                        
+                                        <label for="LoaiNV">Loại nhân viên</label>
+                                        <input readonly value="" type="text" class="form-control" id="LoaiNV" placeholder="Giám đốc" name="LoaiNV">
+
+                                        <label for="username">Tên người dùng</label>
+                                        <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
+                                        
+                                        <label for="pass2">Xác nhận mật khẩu</label>
+                                        <input value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
+                                        
+                                        <label for="TenPB">Tên phòng ban</label>
+                                        <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Lưu</button>
+                                </form>
+                            </div>
                     </div>
+                </div>
+            </div>                                    
+        </div><!-- Main Col END -->
+        <div>
+                <button class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    </button>
+
+                    <button class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Loading..
+                    </button>
+
+                    <button class="btn btn-primary" disabled>
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Loading..
+                    </button>
+
+                    <button class="btn btn-primary" disabled>
+                    <span class="spinner-grow spinner-grow-sm"></span>
+                    Loading..
+                    </button>
+
+            </div>
+            
+            <div>
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </div>
+            <div>
+                <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+                <div id="demo" class="collapse">
+                Lorem ipsum dolor text....
                 </div>
             </div>
             <div>
-
+                <div class="toast">
+                    <div class="toast-header">
+                        Toast Header
+                    </div>
+                    <div class="toast-body">
+                        Some text inside the toast body
+                    </div>
+                </div>
             </div>
-        </div><!-- Main Col END -->
     </div><!-- body-row END -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
