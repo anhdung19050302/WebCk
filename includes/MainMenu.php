@@ -21,7 +21,7 @@
         <a href="http://localhost:8081/Webck/Manager/AccountManager.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Danh sách tài khoản</span>
         </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+        <a href="http://localhost:8081/Webck/Manager/AddAccount.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Thêm một tài khoản</span>
         </a>
         </div>
