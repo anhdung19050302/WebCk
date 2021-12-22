@@ -18,7 +18,7 @@
     
     <!-- Chi tiết Quản lí tài khoản -->
     <div id="submenu1" class="collapse sidebar-submenu">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+        <a href="http://localhost:8081/Webck/Manager/AccountManager.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Danh sách tài khoản</span>
         </a>
         <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
@@ -37,10 +37,10 @@
     </a>
     <!-- chức năng chi tiết của quản lí phòng ban -->
     <div id='submenu2' class="collapse sidebar-submenu">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+        <a href="http://localhost:8081/Webck/Manager/ChinhSuaPhongBan.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Danh sách phòng ban</span>
         </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+        <a href="http://localhost:8081/Webck/Manager/PhongBan.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Thêm một phòng ban</span>
         </a>
     </div>
