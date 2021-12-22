@@ -38,7 +38,7 @@
                         <div class="avatar-container media border p-3">
                             <!--show avatar-->
                             <label for="imageFile">
-                                <img src="../images/avatar.png" id="image" alt="avatar" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+                                <img src="../images/avatar.png" id="image" alt="avatar" class="mr-3 mt-3 rounded-circle" style="width:150px;">
                             </label>
                             <input type="file" name="input-img" id="imageFile" style="display: none;" onchange="chooseFile(this)" accept="image/gif, image/jpeg, image/png"> 
                             
@@ -58,9 +58,30 @@
                                         <label for="username">Tên người dùng</label>
                                         <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
                                         
-                                        <label for="pass2">Xác nhận mật khẩu</label>
+                                        <label for="pass">Xác nhận mật khẩu</label>
                                         <input value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
-                                        
+                                        <!--
+
+                                         <div>
+                                            <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+                                            <div id="demo" class="collapse">
+                                            Lorem ipsum dolor text....
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                            Sony
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Tablet</a>
+                                            <a class="dropdown-item" href="#">Smartphone</a>
+                                            </div>
+                                        </div>
+                                        -->
+                                       
+
                                         <label for="TenPB">Tên phòng ban</label>
                                         <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
 
