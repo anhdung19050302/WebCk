@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../style.css"> <!-- Sử dụng link tuyệt đối tính từ root, vì vậy có dấu / đầu tiên -->
 	<link rel="stylesheet" href="./test.css"> <!--change link css-->
+	<script src="https://kit.fontawesome.com/28493d7750.js" crossorigin="anonymous"></script>
     <title>Profile Enployee</title>
 </head>
 
