@@ -1,4 +1,5 @@
 // ví dụ sử dụng javascript thuần
+/*
 window.addEventListener("load", () => {
 	let title = document.querySelector("h3");
 
@@ -17,6 +18,8 @@ $(document).ready(() => {
 		$("h3").html("jQuery đã hoạt động");
 	});
 });
+
+*/
 
 /*
 	của nakbar
@@ -50,3 +53,15 @@ function SidebarCollapse () {
     // Collapse/Expand icon
     $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
 }
+
+//chức năng tải avatar
+function chooseFile(fileInput){
+    if (fileInput.files && fileInput.files[0]){
+        var reader = new FileReader();
+
+        reader.onload = function(e){
+            $('#image').attr('src', e.target.result);            
+        }
+        reader.readAsDataURL(fileInput.files[0]);
+    }
+} 

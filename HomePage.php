@@ -23,6 +23,7 @@
         ?>
         <!-- MAIN -->
         <!--
+            body web in Home page
         -->
         <div class="col p-4">
             <h1 class="display-4">Collapsing Sidebar Menu</h1>
