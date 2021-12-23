@@ -39,11 +39,11 @@
                                 <th>Tên công việc</th>
                                 <th>Người giao</th>
                                 <th>Thời gian</th>
-                                <th>Nhân viên đảm nhận</th>                                
-                                <th>Trạng thái</th>
+                                <th>Trạng thái</th>                                
+                                <th>Xác nhận</th>
                                 <th>Đánh giá</th>
-                                <th>Xóa</th> 
-                                <th>Mô tả</th>                               
+                                <th>Nộp kết quả</th> 
+                                <th>Mô tả công việc</th>                               
                             </tr>
                             </thead>
                             <tbody>
@@ -52,13 +52,15 @@
                                 <td>Viết báo cáo</td>
                                 <td>Trình bày báo cáo</td>
                                 <td>12:00</td>
-                                <td>Nguyễn Mỹ Anh</td>
-                                <td>In progress</td>
-                                <td class="text-danger">
-                                    Bad
+                                <td class="text-warning">New</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-warning">Start</button>                                                                                                                                                      
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
+                                    <div class="text-danger">Bad</div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-success">Submit</button>                                                                                                                                                      
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
@@ -69,13 +71,15 @@
                                 <td>Viết báo cáo</td>
                                 <td>Trình bày báo cáo</td>
                                 <td>12:00</td>
-                                <td>Nguyễn Thị Hằng</td>
-                                <td>Canceled</td>
-                                <td class="text-primary">
-                                    OK
+                                <td class="text-warning">New</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-warning">Start</button>                                                                                                                                                      
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
+                                    <div class="text-primary">OK</div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-success">Submit</button>                                                                                                                                                      
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
@@ -86,13 +90,15 @@
                                 <td>Viết báo cáo</td>
                                 <td>Trình bày báo cáo</td>
                                 <td>12:00</td>
-                                <td>Nguyễn Đức Dũng</td>
-                                <td>Waiting</td>
-                                <td class="text-success">
-                                    Good
+                                <td class="text-warning">New</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-warning">Start</button>                                                                                                                                                      
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
+                                    <div class="text-success">Good</div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-success">Submit</button>                                                                                                                                                      
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
