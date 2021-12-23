@@ -175,8 +175,8 @@
                         </div>
                     </div>
                 </div>
-            
             </div>
+            
             <div>
                 <h1>My First JavaScript</h1>
                 <button type="button"
@@ -184,7 +184,6 @@
                 Click me to display Date and Time.</button>
                 <p id="demo"></p>
             </div>
-
     </div><!-- body-row END -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -61,7 +61,7 @@
                                     <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
                                 </td>
                             </tr>
                             <tr class="text-center">
@@ -78,7 +78,7 @@
                                     <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
                                 </td>
                             </tr>
                             <tr class="text-center">
@@ -95,13 +95,134 @@
                                     <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
                                 </td>
                             </tr>
                             </tbody>
                         </table>
                     </div>                   
-                    <!--End nọi dung task-->
+                    <!--End nội dung task-->
+                    <!--chi tiết task-->
+                    <div>
+                    <div id="demo" class="collapse">
+                        <div class="col p-4">           
+                            <div class="card">
+                                <h5 class="card-header font-weight-light">Chi tiết công việc</h5>
+                                <div class="card-body">
+                                    <div class="container mt-3">                                                             
+                                        <div class="container">                            
+                                            <form action="/action_page.php">
+                                                <div class="form-group">                                    
+                                                    <label for="username">Nhân viên thực hiện</label>
+                                                    <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                                                                                    
+                                                    <label for="LoaiNV">Loại nhân viên</label>
+                                                    <input readonly value="" type="text" class="form-control" id="LoaiNV" placeholder="Giám đốc" name="LoaiNV">
+
+                                                    <label for="username">Tên người dùng</label>
+                                                    <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
+                                                    
+                                                    <label for="pass">Xác nhận mật khẩu</label>
+                                                    <input readonly value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
+    
+                                                    <label for="TenPB">Tên phòng ban</label>
+                                                    <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+
+                                                </div>       
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-12">                                                               
+                                                        <!--Xem chi tiết công việc-->                            
+                                                        <div>                                                    
+                                                            <!-- Button to Open the Modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#review">Review</button>
+                                                            <!-- The Modal -->
+                                                            <div class="modal" id="review">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                    
+                                                                        <!-- Modal Header -->
+                                                                        <div class="modal-header">
+                                                                            <h4 class="modal-title">Xem chi tiết task</h4>
+                                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                        </div>
+                                                                        
+                                                                        <!-- Modal body -->
+                                                                        <div class="modal-body">                                                                    
+                                                                            <label for="mota">Tiến độ làm việc</label>                                                                                                                       
+                                                                            <textarea class="form-control" rows="5" id="mota"></textarea>
+                                                                            <br>
+                                                                            <label for="file">Tập tin đính kèm:</label> 
+                                                                            <input type="file" id="file-upload" required name="file" />
+                                                                            <br>
+                                                                            <label for="txtNgayThangNamSinh">Gia hạn deadline:</label>                                
+                                                                            <input type="datetime-local">                                                                            
+                                                                        </div>
+                                                                        
+                                                                        <!-- Modal footer -->
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Đồng ý</button>
+                                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Không đồng ý</button>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>            
+                                                        </div>
+                                                        <!--End xem chi tiết công việc--> 
+                                                    </div>
+                                                    <div class="col-lg-2 col-12">                                                                
+                                                        <!--start button duyệt--> 
+                                                        <div>                                                    
+                                                            <!-- Button to Open the Modal -->
+                                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#duyet">Duyệt</button>
+                                                            <!-- The Modal -->
+                                                            <div class="modal" id="duyet">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                    
+                                                                        <!-- Modal Header -->
+                                                                        <div class="modal-header">
+                                                                            <h4 class="modal-title">Đánh giá công việc nhân viên</h4>
+                                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                        </div>
+                                                                        
+                                                                        <!-- Modal body -->
+                                                                        <div class="modal-body">                                                                    
+                                                                            <label for="NV">Mức độ hoàn thành</label>                                                                
+                                                                            <select class="form-control" id="NV" name="NV">
+                                                                                <option>Bad</option>
+                                                                                <option>Ok</option>
+                                                                                <option>Good</option>                                                                       
+                                                                            </select>                                                                    
+                                                                        </div>
+                                                                        
+                                                                        <!-- Modal footer -->
+                                                                        <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>            
+                                                        </div>
+                                                        <!--End button duyệt-->              
+                                                    </div>                                                           
+                                                    <div class="col-lg-8 col-12">                                                                
+                                                       <div>  </div>               
+                                                    </div>
+                                                </div>   
+
+                                                
+
+                                                                     
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End chi tiết task-->
                 </div>
             </div>
         </div><!-- Main Col END -->

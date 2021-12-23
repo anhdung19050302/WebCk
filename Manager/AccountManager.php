@@ -104,29 +104,60 @@
                                             <div>
                                                 <!--proflie 1-->
                                             </div>                        
-                                                <div class="container">                            
-                                                    <form action="/action_page.php">
-                                                        <div class="form-group">                                    
-                                                            <label for="username">Tên nhân viên</label>
-                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
-                                                                                                                            
-                                                            <label for="LoaiNV">Loại nhân viên</label>
-                                                            <input readonly value="" type="text" class="form-control" id="LoaiNV" placeholder="Giám đốc" name="LoaiNV">
+                                            <div class="container">                            
+                                                <form action="/action_page.php">
+                                                    <div class="form-group">                                    
+                                                        <label for="username">Tên nhân viên</label>
+                                                        <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                                                                                        
+                                                        <label for="LoaiNV">Loại nhân viên</label>
+                                                        <input readonly value="" type="text" class="form-control" id="LoaiNV" placeholder="Giám đốc" name="LoaiNV">
 
-                                                            <label for="username">Tên người dùng</label>
-                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
-                                                            
-                                                            <label for="pass">Xác nhận mật khẩu</label>
-                                                            <input readonly value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
-          
-                                                            <label for="TenPB">Tên phòng ban</label>
-                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        <label for="username">Tên người dùng</label>
+                                                        <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
+                                                        
+                                                        <label for="pass">Xác nhận mật khẩu</label>
+                                                        <input readonly value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
+        
+                                                        <label for="TenPB">Tên phòng ban</label>
+                                                        <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
 
+                                                    </div>                                                        
+                                                    <button type="submit" class="btn btn-primary">Reset mật khẩu</button>
+                                                    <div>
+                                                        <br>
+                                                    </div>
+                                                    <!--reset mạt khẩu-->
+                                                    <div class="container">                                                   
+                                                        <!-- Button to Open the Modal -->
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Reset mật khẩu</button>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Reset mật khẩu</h4>
+                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    </div>
+                                                                    
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">Bạn có chắc chắn reset lại mật khẩu</div>
+                                                                    
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
+                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <button type="submit" class="btn btn-primary">Lưu</button>
-                                                        <button type="submit" class="btn btn-primary">Reset mật khẩu</button>
-                                                    </form>
-                                                </div>
+                                                    </div>
+                                                    <!--End reset mat khau-->
+                                                </form>
+                                            </div>                                               
                                         </div>             
                                     </div>
                                 </div>                                           
