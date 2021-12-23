@@ -42,6 +42,7 @@
                                 <th>Nhân viên đảm nhận</th>                                
                                 <th>Trạng thái</th>
                                 <th>Đánh giá</th>
+                                <th>Lịch sử</th>
                                 <th>Xóa</th> 
                                 <th>Mô tả</th>                               
                             </tr>
@@ -56,6 +57,9 @@
                                 <td>In progress</td>
                                 <td class="text-danger">
                                     Bad
+                                </td>
+                                <td>
+                                    (danh sách và thông tin chi tiết của những lần submit cũng như  reject hoặc approve của task)
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
@@ -75,6 +79,9 @@
                                     OK
                                 </td>
                                 <td>
+                                    (danh sách và thông tin chi tiết của những lần submit cũng như  reject hoặc approve của task)
+                                </td>
+                                <td>
                                     <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
                                 </td>
                                 <td>
@@ -90,6 +97,9 @@
                                 <td>Waiting</td>
                                 <td class="text-success">
                                     Good
+                                </td>
+                                <td>
+                                    (danh sách và thông tin chi tiết của những lần submit cũng như  reject hoặc approve của task)
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
