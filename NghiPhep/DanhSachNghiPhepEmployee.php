@@ -51,42 +51,55 @@
         </div>
         <div class="col p-4">           
             <div class="card">
-                <h5 class="card-header font-weight-light">Danh sách ngày nghỉ</h5>
+                <h5 class="card-header font-weight-light">Danh sách công việc</h5>
                 <div class="card-body">                   
                     <!---Nội dung task-->                   
-                    <div class="container">
-                                                                    
+                    <div class="container">                                              
                         <table class="table table-bordered table-sm">
                             <thead>
                             <tr class="text-center">
                                 <th>STT</th>
-                                <th>Ngày xin nghỉ phép</th>
+                                <th>Tên nhân viên</th>
+                                <th>Ngày xin nghỉ</th>
                                 <th>Ngày nộp đơn</th>
-                                <th>Ngày đơn được duyệt</th>
-                                <th>Trạng thái đơn</th>                                                        
+                                <th>Ngày duyệt đơn</th>                                
+                                <th>Trạng thái</th>
+                                <th>Mô tả</th>                               
                             </tr>
                             </thead>
                             <tbody>
                             <tr class="text-center">
                                 <td>1</td>
+                                <td>Nguyễn Mỹ Anh</td>
                                 <td>16/1/2022</td>
                                 <td>12/1/2022</td>
-                                <td>15/1/2022</td>
-                                <td class="text-secondary">Wating</td>
+                                <td>???</td>
+                                <td class="text-secondary">Waiting</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                </td>
                             </tr>
                             <tr class="text-center">
                                 <td>1</td>
+                                <td>Nguyễn Mỹ Anh</td>
                                 <td>16/1/2022</td>
                                 <td>12/1/2022</td>
-                                <td>15/1/2022</td>
-                                <td class="text-secondary">Wating</td>
+                                <td>???</td>
+                                <td class="text-secondary">Waiting</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                </td>
                             </tr>
                             <tr class="text-center">
                                 <td>1</td>
+                                <td>Nguyễn Mỹ Anh</td>
                                 <td>16/1/2022</td>
                                 <td>12/1/2022</td>
-                                <td>15/1/2022</td>
-                                <td class="text-secondary">Wating</td>
+                                <td>???</td>
+                                <td class="text-secondary">Waiting</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                </td>
                             </tr>
                             </tbody>
                         </table>
