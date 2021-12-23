@@ -62,7 +62,7 @@
                                     (danh sách và thông tin chi tiết của những lần submit cũng như  reject hoặc approve của task)
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-danger">Hủy</button>                                                                                                                                                      
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
@@ -82,7 +82,7 @@
                                     (danh sách và thông tin chi tiết của những lần submit cũng như  reject hoặc approve của task)
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-danger">Hủy</button>                                                                                                                                                      
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
@@ -102,7 +102,7 @@
                                     (danh sách và thông tin chi tiết của những lần submit cũng như  reject hoặc approve của task)
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-danger">Xóa</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-danger">Hủy</button>                                                                                                                                                      
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
@@ -123,108 +123,71 @@
                                         <div class="container">                            
                                             <form action="/action_page.php">
                                                 <div class="form-group">                                    
-                                                    <label for="username">Nhân viên thực hiện</label>
+                                                    <label for="username">Tên công việc</label>
                                                     <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
-                                                                                                                    
-                                                    <label for="LoaiNV">Loại nhân viên</label>
-                                                    <input readonly value="" type="text" class="form-control" id="LoaiNV" placeholder="Giám đốc" name="LoaiNV">
-
-                                                    <label for="username">Tên người dùng</label>
-                                                    <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
-                                                    
-                                                    <label for="pass">Xác nhận mật khẩu</label>
-                                                    <input readonly value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
-    
-                                                    <label for="TenPB">Tên phòng ban</label>
-                                                    <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
-
-                                                </div>       
-                                                <div class="row">
-                                                    <div class="col-lg-2 col-12">                                                               
-                                                        <!--Xem chi tiết công việc-->                            
-                                                        <div>                                                    
-                                                            <!-- Button to Open the Modal -->
-                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#review">Review</button>
-                                                            <!-- The Modal -->
-                                                            <div class="modal" id="review">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                    
-                                                                        <!-- Modal Header -->
-                                                                        <div class="modal-header">
-                                                                            <h4 class="modal-title">Xem chi tiết task</h4>
-                                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                        </div>
-                                                                        
-                                                                        <!-- Modal body -->
-                                                                        <div class="modal-body">                                                                    
-                                                                            <label for="mota">Tiến độ làm việc</label>                                                                                                                       
-                                                                            <textarea class="form-control" rows="5" id="mota"></textarea>
-                                                                            <br>
-                                                                            <label for="file">Tập tin đính kèm:</label> 
-                                                                            <input type="file" id="file-upload" required name="file" />
-                                                                            <br>
-                                                                            <label for="txtNgayThangNamSinh">Gia hạn deadline:</label>                                
-                                                                            <input type="datetime-local">                                                                            
-                                                                        </div>
-                                                                        
-                                                                        <!-- Modal footer -->
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Đồng ý</button>
-                                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Không đồng ý</button>
-                                                                        </div>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </div>            
+                                                      
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Nhân viên thực hiện</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
                                                         </div>
-                                                        <!--End xem chi tiết công việc--> 
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Tên phòng ban</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>      
+
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Người giao</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Chức vụ</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>      
+
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Thời gian giao</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Thời hạn hoàn thành</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>      
+
+                                                                                                     
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Trạng thái</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Đánh giá</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>             
+                                                </div>     
+
+                                                <div class="form-group">
+                                                    File đính kèm: 
+                                                    <a href="../NghiPhep/test.docx">Download!</a>
+                                                </div>   
+
+                                                <div class="form-group row">
+                                                    <div class="col-lg-2 col-12"> 
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#review">Review</button>
                                                     </div>
-                                                    <div class="col-lg-2 col-12">                                                                
-                                                        <!--start button duyệt--> 
-                                                        <div>                                                    
-                                                            <!-- Button to Open the Modal -->
-                                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#duyet">Duyệt</button>
-                                                            <!-- The Modal -->
-                                                            <div class="modal" id="duyet">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                    
-                                                                        <!-- Modal Header -->
-                                                                        <div class="modal-header">
-                                                                            <h4 class="modal-title">Đánh giá công việc nhân viên</h4>
-                                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                        </div>
-                                                                        
-                                                                        <!-- Modal body -->
-                                                                        <div class="modal-body">                                                                    
-                                                                            <label for="NV">Mức độ hoàn thành</label>                                                                
-                                                                            <select class="form-control" id="NV" name="NV">
-                                                                                <option>Bad</option>
-                                                                                <option>Ok</option>
-                                                                                <option>Good</option>                                                                       
-                                                                            </select>                                                                    
-                                                                        </div>
-                                                                        
-                                                                        <!-- Modal footer -->
-                                                                        <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                                                        </div>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </div>            
-                                                        </div>
-                                                        <!--End button duyệt-->              
-                                                    </div>                                                           
+                                                    <div class="col-lg-2 col-12"> 
+                                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#duyet">Duyệt</button>
+                                                    </div>
                                                     <div class="col-lg-8 col-12">                                                                
                                                        <div>  </div>               
                                                     </div>
-                                                </div>   
-
-                                                
-
-                                                                     
+                                                </div>
                                             </form>
                                         </div>
                                     </div>
@@ -233,6 +196,86 @@
                         </div>
                     </div>
                     <!--End chi tiết task-->
+                    <!--
+                        //---------------------------------------------------------------------------------------
+                    -->
+                    <!--Nội dung của modal-->
+                    <!--Xem chi tiết công việc-->                            
+                    <div>                                                               
+                        <!-- The Modal của review -->
+                        <div class="modal" id="review">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Xem chi tiết task</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">                                                                    
+                                        <label for="mota">Tiến độ làm việc</label>                                                                                                                       
+                                        <textarea class="form-control" rows="5" id="mota"></textarea>
+                                        <br>
+                                        <label for="file">Tập tin đính kèm:</label> 
+                                        <input type="file" id="file-upload" required name="file" />
+                                        <br>  
+                                                                           
+                                        <label data-toggle="collapse" data-target="#demo1">Gia hạn deadline:
+                                            <input type="checkbox" value="">
+                                        </label> 
+                                        <div id="demo1" class="collapse">
+                                            <input type="datetime-local">  
+                                        </div>                                                                        
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Đồng ý</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Không đồng ý</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                    <!--End xem chi tiết công việc--> 
+
+                    <!--start button duyệt--> 
+                    <div>                                                                           
+                        <!-- The Modal -->
+                        <div class="modal" id="duyet">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Đánh giá công việc nhân viên</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">                                                                    
+                                        <label for="NV">Mức độ hoàn thành</label>                                                                
+                                        <select class="form-control" id="NV" name="NV">
+                                            <option>Good</option>                                             
+                                            <option>Ok</option>
+                                            <option>Bad</option>                                                            
+                                        </select>                                                                    
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                    <!--End button duyệt--> 
+                    <!--END mobar-->
                 </div>
             </div>
         </div><!-- Main Col END -->

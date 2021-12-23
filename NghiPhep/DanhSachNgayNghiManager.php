@@ -28,60 +28,125 @@
         -->
         <div class="col p-4">           
             <div class="card">
-                <h5 class="card-header font-weight-light">Danh sách công việc</h5>
+                <h5 class="card-header font-weight-light">Quản lý nghỉ phép</h5>
                 <div class="card-body">                   
-                    <!---Nội dung task-->                   
-                    <div class="container">                                              
-                        <table class="table table-bordered table-sm">
-                            <thead>
-                            <tr class="text-center">
-                                <th>STT</th>
-                                <th>Tên nhân viên</th>
-                                <th>Ngày xin nghỉ</th>
-                                <th>Ngày nộp đơn</th>
-                                <th>Ngày duyệt đơn</th>                                
-                                <th>Trạng thái</th>
-                                <th>Mô tả</th>                               
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="text-center">
-                                <td>1</td>
-                                <td>Nguyễn Mỹ Anh</td>
-                                <td>16/1/2022</td>
-                                <td>12/1/2022</td>
-                                <td>???</td>
-                                <td class="text-secondary">Waiting</td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
-                                </td>
-                            </tr>
-                            <tr class="text-center">
-                                <td>1</td>
-                                <td>Nguyễn Mỹ Anh</td>
-                                <td>16/1/2022</td>
-                                <td>12/1/2022</td>
-                                <td>???</td>
-                                <td class="text-secondary">Waiting</td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
-                                </td>
-                            </tr>
-                            <tr class="text-center">
-                                <td>1</td>
-                                <td>Nguyễn Mỹ Anh</td>
-                                <td>16/1/2022</td>
-                                <td>12/1/2022</td>
-                                <td>???</td>
-                                <td class="text-secondary">Waiting</td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>                   
-                    <!--End nọi dung task-->
+                    <!--bắt đầu nội dung từ đây-->
+                    <div>                               
+                        <div class="container">                            
+                            <h3>Danh sách đơn xin nghỉ phép</h3>                            
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr class="text-center">
+                                        <th>STT</th>
+                                        <th>Tên nhân viên</th>
+                                        <th>Ngày xin nghỉ</th>
+                                        <th>Ngày nộp đơn</th>
+                                        <th>Ngày duyệt đơn</th>                                
+                                        <th>Trạng thái</th>
+                                        <th>Mô tả</th>                               
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td>1</td>
+                                        <td>Nguyễn Mỹ Anh</td>
+                                        <td>16/1/2022</td>
+                                        <td>12/1/2022</td>
+                                        <td>???</td>
+                                        <td class="text-secondary">Waiting</td>
+                                        <td>
+                                            <input type="submit" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Xem chi tiết">    
+                                        </td>                                        
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td>1</td>
+                                        <td>Nguyễn Mỹ Anh</td>
+                                        <td>16/1/2022</td>
+                                        <td>12/1/2022</td>
+                                        <td>???</td>
+                                        <td class="text-secondary">Waiting</td>
+                                        <td>
+                                            <input type="submit" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Xem chi tiết">    
+                                        </td> 
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td>1</td>
+                                        <td>Nguyễn Mỹ Anh</td>
+                                        <td>16/1/2022</td>
+                                        <td>12/1/2022</td>
+                                        <td>???</td>
+                                        <td class="text-secondary">Waiting</td>
+                                        <td>
+                                            <input type="submit" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Xem chi tiết">    
+                                        </td> 
+                                    </tr>
+                                </tbody>
+                            </table>                            
+                        </div>
+                        <div>
+                            <div>                                
+                                <div id="demo" class="collapse">
+                                <div class="col p-4">           
+                                    <div class="card">
+                                        <h5 class="card-header font-weight-light">Chi tiết đơn</h5>
+                                        <div class="card-body">
+                                            <div>                        
+                                                <div>                                                                               
+                                                    <form action="#" class="was-validated">                                               
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-12">                                                               
+                                                                <label for="tenNhanVien">Tên nhân viên xin phép:</label>                                                            
+                                                                <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                                
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">                                                                
+                                                                <label for="tenNhanVien">Thời gian gửi</label>                                                            
+                                                                <input readonly value="20/10/2021 11:20 A.M" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                            </div>
+                                                        </div>    
+
+                                                        <br>
+                                                        <!--    -->
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-12">                                                               
+                                                                <label for="tenNhanVien">Thời gian bắt đầu:</label>                                                            
+                                                                <input readonly value="22/10/2021" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                                
+                                                            </div>
+                                                            <div class="col-lg-4 col-12">                                                                
+                                                                <label for="tenNhanVien">Thời gian kết thúc:</label>                                                            
+                                                                <input readonly value="25/10/2021" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                            </div>                                                           
+                                                            <div class="col-lg-4 col-12">                                                                
+                                                                <label for="tenNhanVien">Số ngày muốn nghỉ:</label>                                                            
+                                                                <input readonly value="3" name="username" id="username" type="text" class="form-control" placeholder="số ngày muốn nghỉ">                           
+                                                            </div>
+                                                        </div>                                                          
+
+                                                        <!--    -->
+                                                        <div class="form-group">
+                                                            <label for="moTa">Mô Tả:</label>                                   
+                                                            <textarea readonly class="form-control" rows="5" id="mota">Helloc Doe csacdsa cisacdsai csacdsaic csincdi csaichech cahsidcs cshiachoen cihdascdhso</textarea>
+                                                        </div>  
+                                                       
+                                                        <div class="form-group">
+                                                            File đính kèm: 
+                                                            <a href="../NghiPhep/test.docx">Download!</a>
+                                                        </div>                                                        
+                                                        <div>
+                                                            <button type="submit" class="btn btn-success pl-4 pr-4 mr-2">Đồng Ý</button>
+                                                            <button type="submit" class="btn btn-outline-success pl-4 pr-4">Không đồng ý</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>               
+                                        </div>
+                                    </div>                                           
+                                </div>
+                            </div>
+                        </div> 
+                    </div>    
+                    <!--END nội dung-->
                 </div>
             </div>
         </div><!-- Main Col END -->

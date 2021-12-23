@@ -42,7 +42,7 @@
                                 </div>                                
                                 <br>
                                 <!--    -->
-                                <div class="row">
+                                <div class="form-group row">
                                     <div class="col-lg-4 col-12">                                                               
                                         <label for="tenNhanVien">Thời gian bắt đầu:</label>                                                                                
                                         <input type="date">
