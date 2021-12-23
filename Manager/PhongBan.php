@@ -39,8 +39,7 @@
                                     <input required type="text" class="form-control" name="tenPhongBan" id="TenPhongBan">
                                     <!-- -->
                                     <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill out this field.</div>
-                                    
+                                    <div class="invalid-feedback">Please fill out this field.</div>                                    
                                 </div>
 
                                 <!--    -->

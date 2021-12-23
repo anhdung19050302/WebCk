@@ -76,7 +76,7 @@
     </a>
     <!-- Chi tiết Quản lí ngày nghỉ -->
     <div id="submenu4" class="collapse sidebar-submenu">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+        <a href="http://localhost:8081/Webck/Employee/nghiPhep.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Danh sách đơn nghỉ</span>
         </a>
         <a href="#" class="list-group-item list-group-item-action bg-dark text-white">

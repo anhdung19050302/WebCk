@@ -128,7 +128,8 @@
                                     </div>                                           
                                 </div>
                             </div>
-                        </div>                       
+                        </div> 
+                        <!--END-->                      
                     </div>               
                 </div>
             </div>            
