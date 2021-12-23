@@ -33,50 +33,42 @@
                     <!--bắt đầu nội dung từ đây-->
                     <div>                        
                         <div>                                                                               
-                            <form action="#" class="was-validated">                                               
-                                <div class="row">
-                                    <div class="col-lg-6 col-12">                                                               
-                                        <label for="tenNhanVien">Tên nhân viên xin phép:</label>                                                            
-                                        <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
-                                        
-                                    </div>
-                                    <div class="col-lg-6 col-12">                                                                
-                                        <label for="tenNhanVien">Thời gian gửi</label>                                                            
-                                        <input readonly value="20/10/2021 11:20 A.M" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
-                                    </div>
-                                </div>    
-
+                            <form action="#" class="was-validated">    
+                                <!--    -->
+                                <div class="form-group">
+                                    <label for="tenNhanVien">Tên nhân viên xin phép:</label>                                                            
+                                    <input value="" name="username" id="username" type="text" class="form-control" placeholder="Nhập họ tên nhân viên">
+                        
+                                </div>                                
                                 <br>
                                 <!--    -->
                                 <div class="row">
                                     <div class="col-lg-4 col-12">                                                               
-                                        <label for="tenNhanVien">Thời gian bắt đầu:</label>                                                            
-                                        <input readonly value="22/10/2021" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
-                                        
+                                        <label for="tenNhanVien">Thời gian bắt đầu:</label>                                                                                
+                                        <input type="date">
                                     </div>
                                     <div class="col-lg-4 col-12">                                                                
                                         <label for="tenNhanVien">Thời gian kết thúc:</label>                                                            
-                                        <input readonly value="25/10/2021" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                        <input type="date">
                                     </div>                                                           
                                     <div class="col-lg-4 col-12">                                                                
                                         <label for="tenNhanVien">Số ngày muốn nghỉ:</label>                                                            
-                                        <input readonly value="3" name="username" id="username" type="text" class="form-control" placeholder="số ngày muốn nghỉ">                           
+                                        <input readonly value="tự động tính" name="username" id="username" type="text" class="form-control" placeholder="số ngày muốn nghỉ">                           
                                     </div>
                                 </div>                                                          
 
                                 <!--    -->
                                 <div class="form-group">
                                     <label for="moTa">Mô Tả:</label>                                   
-                                    <textarea readonly class="form-control" rows="5" id="mota">Helloc Doe csacdsa cisacdsai csacdsaic csincdi csaichech cahsidcs cshiachoen cihdascdhso</textarea>
+                                    <textarea class="form-control" rows="5" id="mota"></textarea>
                                 </div>  
                                 
                                 <div class="form-group">
-                                    File đính kèm: 
-                                    <a href="../NghiPhep/test.docx">Download!</a>
-                                </div>                                                        
+                                    <label for="file">Tập tin đính kèm:</label> 
+                                    <input type="file" id="file-upload" required name="file" />                                                                       
+                                </div>                                                  
                                 <div>
-                                    <button type="submit" class="btn btn-success pl-4 pr-4 mr-2">Đồng Ý</button>
-                                    <button type="submit" class="btn btn-outline-success pl-4 pr-4">Không đồng ý</button>
+                                    <button type="submit" class="btn btn-success pl-4 pr-4 mr-2">Gửi đơn</button>                                   
                                 </div>
                             </form>
                         </div>
