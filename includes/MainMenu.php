@@ -53,13 +53,13 @@
             <span class="menu-collapsed">Quản lý công việc</span>
             <span class="fas fa-angle-down ml-auto"></span>
         </div>
-                </a>
+    </a>
     <!-- Chi tiết Quản lí công việc -->
     <div id="submenu3" class="collapse sidebar-submenu">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+        <a href="http://localhost:8081/Webck/Task/TaskManager.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Danh sách công việc</span>
         </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+        <a href="http://localhost:8081/Webck/Task/CreateTask.php" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed m-2">Thêm công việc </span>
         </a>
 

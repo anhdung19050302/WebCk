@@ -1,26 +1,4 @@
-// ví dụ sử dụng javascript thuần
-/*
-window.addEventListener("load", () => {
-	let title = document.querySelector("h3");
-
-	title.onmouseover = () => {
-		title.style.color = "deeppink";
-	};
-
-	title.addEventListener("mouseleave", () => {
-		title.style.color = "black";
-	});
-});
-
-// ví dụ sử dụng jquery
-$(document).ready(() => {
-	$("#test").on("click", () => {
-		$("h3").html("jQuery đã hoạt động");
-	});
-});
-
-*/
-
+'use strict'
 /*
 	của nakbar
 */
@@ -53,7 +31,13 @@ function SidebarCollapse () {
     // Collapse/Expand icon
     $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
 }
-
+/*
+    END	của nakbar
+*/
+//----------------------------------------------------------------------------------------------
+/*
+	của nakbar
+*/
 //chức năng tải avatar
 function chooseFile(fileInput){
     if (fileInput.files && fileInput.files[0]){
@@ -64,4 +48,27 @@ function chooseFile(fileInput){
         }
         reader.readAsDataURL(fileInput.files[0]);
     }
-} 
+}
+/*
+    End của nakbar
+*/
+
+//----------------------------------------------------------------------------------------------
+/*
+ Phần code của CreateTask
+*/
+// Viết code Jquery 
+ 
+    // Yêu cầu JQUERY UI thay thế INPUT text có id="txtNgayThangNamSinh" thành công cụ chọn ngày tháng Date Picker
+$('#txtNgayThangNamSinh').datepicker(
+    {
+    //showButtonPanel: true,    // option hiển thị nút "Today", "Done"
+    //dateFormat: 'dd/mm/yy'    // option Định dạng format ngày tháng; d: Day Ngày; m: Month tháng; y: Year năm
+    }
+);
+ 
+// <!-- Phần xử lý code JavaScript - END -->
+/*
+    END của CreateTask
+*/
+//----------------------------------------------------------------------------------------------

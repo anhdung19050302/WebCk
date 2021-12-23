@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://kit.fontawesome.com/28493d7750.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../style.css"> <!-- Sử dụng link tuyệt đối tính từ root, vì vậy có dấu / đầu tiên -->
-	<title>Phong Ban</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../style.css"> <!-- Sử dụng link tuyệt đối tính từ root, vì vậy có dấu / đầu tiên -->
+    <title>Home Page</title>
 </head>
 
 <body>
@@ -28,34 +28,50 @@
         -->
         <div class="col p-4">           
             <div class="card">
-                <h5 class="card-header font-weight-light">Thêm phòng ban</h5>
-                <div class="card-body">
+                <h5 class="card-header font-weight-light">Thêm công việc</h5>
+                <div class="card-body">                    
+                    <!--Nội dung bắt đầu từ đây--->
                     <div>
                         <div>
                             <form action="#" class="was-validated">                                               
                                 <!--    -->
                                 <div class="form-group">
-                                    <label for="tenPhongBan">Tên Phòng Ban: </label>
+                                    <label for="tenPhongBan">Tên công việc (tiêu đề):</label>
                                     <input required type="text" class="form-control" name="tenPhongBan" id="TenPhongBan">
                                     <!-- -->
                                     <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill out this field.</div>
-                                    
+                                    <div class="invalid-feedback">Please fill out this field.</div>                                    
                                 </div>
 
                                 <!--    -->
                                 <div class="form-group">
-                                    <label for="moTa">Mô Tả:</label>                                   
+                                    <label for="moTa">Chi tiết công việc:</label>                                   
                                     <textarea class="form-control" rows="5" id="mota"></textarea>
                                 </div>    
 
+                                <!--    -->
                                 <div class="form-group">
-                                    <label for="soPhong">Số Phòng: </label>                                                                
-                                    <select class="form-control" id="soPhong" name="soPhong">
-                                        <option>PH202</option>
-                                        <option>Ph304</option>
-                                        <option>Ph305</option>
-                                        <option>Ph306</option>
+                                    <label for="txtNgayThangNamSinh">Deadline:</label>                                
+                                    <input type="datetime-local">
+                                    <!-- -->
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>                                    
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="file">Tập tin đính kèm:</label> 
+                                    <input type="file" id="file-upload" required name="file" />                                    
+                                    <button type="button" class="btn btn-primary" id='addfile' class="btn btn-default">Thêm File</button>
+
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="NV">Nhân viên đảm nhận:</label>                                                                
+                                    <select class="form-control" id="NV" name="NV">
+                                        <option>Hihi Haha</option>
+                                        <option>Hihi Haha</option>
+                                        <option>Hihi Haha</option>
+                                        <option>Hihi Haha</option>
                                     </select>
                                 </div> 
 
@@ -66,8 +82,9 @@
                             </form>
                         </div>
                     </div>               
+                    <!--End nội dung-->
                 </div>
-            </div>            
+            </div> 
         </div><!-- Main Col END -->
     </div><!-- body-row END -->
 
