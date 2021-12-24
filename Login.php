@@ -17,7 +17,7 @@
 		<h3 class="mt-5 mb-3 text-center text-primary">Đăng nhập</h2>
 		<div class="row justify-content-center">
 			<div class="col-md-6 col-lg-4 col-sm-12">
-				<form class="border p-3 rounded">
+				<form action="./Task/TaskManager.php" class="border p-3 rounded" >
 					<div class="form-group">
 						<label for="email">Tên người dùng:</label>
 						<input type="email" class="form-control" id="usename" placeholder="Nhập tên người dùng" name="username">

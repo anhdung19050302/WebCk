@@ -10,7 +10,7 @@
       <ul class="navbar-nav ml-auto">
         <!-- Thông tin cá nhân -->
         <li class="nav-item d-flex align-items-center">
-            <a class="nav-link" href="http://localhost:8081/Webck/Employee/Profile.php">
+            <a class="nav-link" href="../Employee/Profile.php">
                 <i class="fas fa-user-tie"></i>
                 Trang cá nhân
             </a> 
@@ -21,7 +21,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#top"> Đăng xuất</a>
+            <a class="nav-link" href="../Login.php"> Đăng xuất</a>
         </li>
 
           <!-- Dieses Menü ist bei größeren Geräten mit d-sm-none ausgeblendet.
