@@ -35,8 +35,8 @@
                 <div class="card-body">
                     <div>                         
                         <div class="container">
-                            <div class="justify-content-end d-flex">
-                                <input class="btn btn-success inline" type="submit" value="Thêm phòng ban" name="New" id="">
+                            <div class="justify-content-end d-flex">                                
+                                <a href="../Manager/PhongBan.php" class="btn btn-success inline" role="button">Thêm phòng ban</a>
                             </div>       
                             <div class="h3">
                                 Danh sách phòng ban

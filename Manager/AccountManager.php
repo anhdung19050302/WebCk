@@ -31,6 +31,11 @@
                 <div class="card-body">                    
                     <!--Nội dung danh sách nhân viên bắt đầu từ đây-->
                     <div class="container">
+                        <!--
+                        <div class="justify-content-end d-flex">                                
+                            <a href="../Manager/AddAccount.php" class="btn btn-success inline" role="button">Thêm tài khoản</a>
+                        </div>  
+                        -->
                         <h3>Danh sách nhân viên</h3>                        
                         <table class="table table-bordered table-sm">
                             <thead>
@@ -92,7 +97,7 @@
                             <!--Vị trí mà hiện ra thông tin nhân viên-->                          
                             <div id="demo" class="collapse">
                             <div class="col p-4">           
-                                <div class="card">
+                                <div class="card">                                       
                                     <h5 class="card-header font-weight-light">Thông tin nhân viên</h5>
                                     <div class="card-body">
                                         <!-- The first line takes photos and employee information -->                    
