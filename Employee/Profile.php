@@ -53,7 +53,10 @@
                                     <div class="form-group">                                    
                                         <label for="username">Tên nhân viên</label>
                                         <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
-                                                                                                        
+                                                     
+                                        <label for="username">Ngày sinh:</label>
+                                        <input readonly value="11/03/2001" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                        
                                         <label for="LoaiNV">Loại nhân viên (chức vụ)</label>
                                         <input readonly value="" type="text" class="form-control" id="LoaiNV" placeholder="Giám đốc" name="LoaiNV">
 
