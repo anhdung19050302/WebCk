@@ -47,6 +47,7 @@
                                         <th>Tên phòng ban</th>
                                         <th>Mô tả</th>
                                         <th>Số phòng</th>
+                                        <th>Chi tiết</th>
                                         <th>Chỉnh sửa</th>
                                         <th>Xóa</th>
                                     </tr>
@@ -57,21 +58,13 @@
                                         <td>Doe csacdsa cisacdsai csacdsaic csineds csaichech cahsidcs csacdsaic csineds csaichech cahsidcs  cshiachoen cihdascdhso</td>
                                         <td>H208</td>
                                         <td>
-                                            <input type="submit" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Sửa">    
+                                            <input type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo1" value="Chi tiết">   
                                         </td>
                                         <td>
-                                            <input type="submit" class="btn btn-outline-danger"value="Xóa">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phòng nghiệp vụ</td>
-                                        <td>Doe csacdsa cisacdsai csacdsaic csincdi csaichech cahsidcs cshiachoen cihdascdhso</td>
-                                        <td>H208</td>
-                                        <td>
-                                            <input type="submit" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Sửa">    
+                                            <input type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Sửa">    
                                         </td>
                                         <td>
-                                            <input type="submit" class="btn btn-outline-danger"value="Xóa">
+                                            <input type="button" class="btn btn-outline-danger"value="Xóa">
                                         </td>
                                     </tr>
                                     <tr>
@@ -79,16 +72,34 @@
                                         <td>Doe csacdsa cisacdsai csacdsaic csincdi csaichech cahsidcs cshiachoen cihdascdhso</td>
                                         <td>H208</td>
                                         <td>
-                                            <input type="submit" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Sửa">    
+                                            <input type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo1" value="Chi tiết">   
                                         </td>
                                         <td>
-                                            <input type="submit" class="btn btn-outline-danger"value="Xóa">
+                                            <input type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Sửa">    
+                                        </td>
+                                        <td>
+                                            <input type="button" class="btn btn-outline-danger"value="Xóa">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phòng nghiệp vụ</td>
+                                        <td>Doe csacdsa cisacdsai csacdsaic csincdi csaichech cahsidcs cshiachoen cihdascdhso</td>
+                                        <td>H208</td>
+                                        <td>
+                                            <input type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo1" value="Chi tiết">   
+                                        </td>
+                                        <td>
+                                            <input type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#demo" value="Sửa">    
+                                        </td>
+                                        <td>
+                                            <input type="button" class="btn btn-outline-danger"value="Xóa">
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>                            
                         </div>
 
+                        <!--xem chi tiết của sửa -->
                         <div>
                             <div>                                
                                 <div id="demo" class="collapse">
@@ -136,7 +147,90 @@
                                     </div>                                           
                                 </div>
                             </div>
-                        </div>                       
+                        </div>  
+                        <!--END xem chi tiết của sửa-->    
+                        <!--xem chi tiết của phòng ban -->
+                        <div>
+                            <div>                                
+                                <div id="demo1" class="collapse">
+                                <div class="col p-4">           
+                                    <div class="card">
+                                        <h5 class="card-header font-weight-light">Chi tiết phòng ban</h5>
+                                        <div class="card-body">
+                                            <div>                        
+                                                <div>                                    
+                                                    <form action="#" class="was-validated">                                               
+                                                        <!--    -->
+                                                        <div class="form-group">
+                                                            <label for="tenPhongBan">Tên Phòng Ban:</label>
+                                                            <input readonly type="text" class="form-control" name="tenPhongBan" id="TenPhongBan" value = "Phòng nghiệp vụ">                                                           
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="tenPhongBan">Tên trưởng phòng:</label>
+                                                            <input readonly type="text" class="form-control" name="tenPhongBan" id="TenPhongBan" value = "Phòng nghiệp vụ">                                                           
+                                                        </div>
+
+                                                        <!--    -->
+                                                        <div class="form-group">
+                                                            <label for="moTa">Mô Tả:</label>                                   
+                                                            <textarea readonly class="form-control" rows="5" id="mota">Helloc Doe csacdsa cisacdsai csacdsaic csincdi csaichech cahsidcs cshiachoen cihdascdhso</textarea>
+                                                        </div>    
+
+                                                        <div class="form-group">
+                                                            <label for="soPhong">Số Phòng: </label>                                                                
+                                                            <select class="form-control" id="soPhong" name="soPhong">
+                                                                <option>PH208</option>
+                                                                <option>Ph304</option>
+                                                                <option>Ph305</option>
+                                                                <option>Ph306</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">                                                            
+                                                            <div class="container">                            
+                                                                <h6>Danh sách nhân viên thuộc phòng ban</h6>                            
+                                                                <table class="table">
+                                                                    <thead class="thead-dark">
+                                                                        <tr class="text-center">
+                                                                            <th>STT</th>
+                                                                            <th>Tên nhân viên</th>
+                                                                            <th>chức vụ</th> 
+                                                                            <th>Số ngày đã xin nghỉ</th>                                                                                                                                                                                
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="text-center">
+                                                                            <td>1</td>
+                                                                            <td>dsads dsadcsd</td>
+                                                                            <td>nhân viên</td>
+                                                                            <td>0</td>                                                                                                                
+                                                                        </tr>
+                                                                        <tr class="text-center">
+                                                                            <td>1</td>
+                                                                            <td>dsads dsadcsd</td>
+                                                                            <td>nhân viên</td>
+                                                                            <td>0</td> 
+                                                                        </tr>
+                                                                        <tr class="text-center">
+                                                                            <td>1</td>
+                                                                            <td>dsads dsadcsd</td>
+                                                                            <td>nhân viên</td>
+                                                                            <td>0</td> 
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>                            
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>               
+                                        </div>
+                                    </div>                                           
+                                </div>
+                            </div>
+                        </div>  
+                        <!--END xem chi tiết phòng ban-->                        
                     </div>               
                 </div>
             </div>            

@@ -44,6 +44,17 @@
 
                                 <!--    -->
                                 <div class="form-group">
+                                    <label for="tenTruongPhongBan">Người đảm nhân trưởng phòng:</label>
+                                    <select class="form-control" id="tenTruongPhongBan" name="tenTruongPhongBan">                                        
+                                        <option>đảvt csad cdsds</option>
+                                        <option>dsvsad ytfjfv</option>
+                                        <option>fdfdv yucbnh vees</option>
+                                        <option>sad hgt dfrv</option>
+                                    </select>                                   
+                                </div>
+
+                                <!--    -->
+                                <div class="form-group">
                                     <label for="moTa">Mô Tả:</label>                                   
                                     <textarea class="form-control" rows="5" id="mota"></textarea>
                                 </div>    

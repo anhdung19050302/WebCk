@@ -105,7 +105,7 @@
                                                 <!--proflie 1-->
                                             </div>                        
                                             <div class="container">                            
-                                                <form action="/action_page.php">
+                                                <form action="../Manager/AccountManager.php">
                                                     <div class="form-group">                                    
                                                         <label for="username">Tên nhân viên</label>
                                                         <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
@@ -116,7 +116,7 @@
                                                         <label for="username">Tên người dùng</label>
                                                         <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
                                                         
-                                                        <label for="pass">Xác nhận mật khẩu</label>
+                                                        <label for="pass">Mật khẩu</label>
                                                         <input readonly value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
         
                                                         <label for="TenPB">Tên phòng ban</label>

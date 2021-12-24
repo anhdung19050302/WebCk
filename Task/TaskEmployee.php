@@ -41,8 +41,7 @@
                                 <th>Thời gian</th>
                                 <th>Trạng thái</th>                                
                                 <th>Xác nhận</th>
-                                <th>Đánh giá</th>
-                                <th>Nộp kết quả</th> 
+                                <th>Đánh giá</th>                                 
                                 <th>Mô tả công việc</th>                               
                             </tr>
                             </thead>
@@ -58,12 +57,9 @@
                                 </td>
                                 <td>
                                     <div class="text-danger">Bad</div>
-                                </td>
+                                </td>                                
                                 <td>
-                                    <button type="button" class="btn btn-outline-success">Submit</button>                                                                                                                                                      
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
                                 </td>
                             </tr>
                             <tr class="text-center">
@@ -77,12 +73,9 @@
                                 </td>
                                 <td>
                                     <div class="text-primary">OK</div>
-                                </td>
+                                </td>                                
                                 <td>
-                                    <button type="button" class="btn btn-outline-success">Submit</button>                                                                                                                                                      
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
                                 </td>
                             </tr>
                             <tr class="text-center">
@@ -96,18 +89,198 @@
                                 </td>
                                 <td>
                                     <div class="text-success">Good</div>
-                                </td>
+                                </td>                               
                                 <td>
-                                    <button type="button" class="btn btn-outline-success">Submit</button>                                                                                                                                                      
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-info">Xem chi tiết</button>                                                                                                                                                      
+                                    <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#demo">Xem chi tiết</button>                                                                                                                                                      
                                 </td>
                             </tr>
                             </tbody>
                         </table>
                     </div>                   
                     <!--End nọi dung task-->
+                    <!--chi tiết task-->
+                    <div>
+                    <div id="demo" class="collapse">
+                        <div class="col p-4">           
+                            <div class="card">
+                                <h5 class="card-header font-weight-light">Chi tiết công việc</h5>
+                                <!--Chi tiết thông tin công viêc cơ bản-->
+                                <div class="card-body">
+                                    <div class="container mt-3">                                                             
+                                        <div class="container">                            
+                                            <form action="/action_page.php">
+                                                <div class="form-group">                                    
+                                                    
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12">
+                                                            <label for="username">Tên công việc</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                         
+                                                        </div>
+                                                        <div class="col-lg-4">
+
+                                                        </div>
+                                                        <div class="col-lg-2 col-12">
+                                                            <span class="text-danger">Nộp trễ hạn</span>
+                                                        </div>
+                                                    </div>
+                                                                                                 
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Nhân viên thực hiện</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Tên phòng ban</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Người giao</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Chức vụ</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>      
+
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Thời gian giao</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Thời hạn hoàn thành</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>      
+                                                    <div class="form-group">            
+                                                        <label for="username">Chi tiết công việc</label>
+                                                        <textarea readonly class="form-control" rows="5" id="mota">cdsacsadcs jcdsjei cshie dchaie cdsiaoie</textarea>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Trạng thái</label>
+                                                            <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Đánh giá</label>
+                                                            <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
+                                                        </div>
+                                                    </div>             
+                                                </div>     
+
+                                                <div class="form-group">
+                                                    File đính kèm: 
+                                                    <a href="../NghiPhep/test.docx">Download!</a>
+                                                </div>   
+                                                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Chi tiết thông tin công viêc cơ bản-->    
+                                <hr>  
+                                <!--Chi tiết thông tin mà trưởng phòng đã Rejected-->
+                                <div class="card-body">
+                                    <div class="container mt-3">                                                             
+                                        <div class="container">                            
+                                            <form action="/action_page.php">
+                                                <div class="form-group">                                    
+                                                    
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="username">Lần: </label>
+                                                            <input readonly value="1" name="username" id="username" type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-lg-6 col-12"> 
+                                                            <label for="TenPB">Thời gian Rejected</label>
+                                                            <input readonly value="22/10/2021 2:35 P.M" type="text" class="form-control" id="TebPB" name="TenPB">
+                                                        </div>
+                                                    </div>      
+
+                                                    <label for="mota">Nhận xét</label>                                                                                                                       
+                                                    <textarea class="form-control" rows="5" id="mota"></textarea>
+                                                   
+                                                    <div>
+                                                        <input type="checkbox" name="rememberMe" id="remenberMe">
+                                                        <label for="rememberMe">Được gia hạn deadline:</label>        
+                                                    </div>
+                                                     
+                                                </div>     
+
+                                                <div class="form-group">
+                                                    File đính kèm: 
+                                                    <a href="../NghiPhep/test.docx">Download!</a>
+                                                </div>                                                   
+                                                                                         
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <!--Chi tiết thông tin công viêc mà trưởng phòng đã review-->   
+                                <hr>
+                                <!--Nộp báo cáo-->  
+                                <div class="card-body">
+                                    <div class="container mt-3">                                                             
+                                        <div class="container">                
+                                            <label for="nopbaocao">Báo cáo kết quả:</label>
+                                            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#nopketqua">Submit</button>                                                                                                                                                      
+                                        </div>
+                                    </div>
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                    <!--End chi tiết task-->
+                    <!--
+                        //---------------------------------------------------------------------------------------
+                    -->
+                    <!--Nội dung của modal-->
+                    <!--submit công việc-->                            
+                    <div>                                                               
+                        <!-- The Modal của nopketqua -->
+                        <div class="modal" id="nopketqua">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Nộp báo cáo</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                   
+                                        <label for="username">Tên nhân viên:</label>
+                                        <input value="" name="username" id="username" type="text" class="form-control" placeholder="Tên nhân viên">
+                            
+                                        <label for="mota">Tiến độ làm việc</label>                                                                                                                       
+                                        <textarea class="form-control" rows="5" id="mota"></textarea>
+                                        <br>
+                                        <label for="file">Tập tin đính kèm:</label> 
+                                        <input type="file" id="file-upload" required name="file" />
+                                        <br>                                                                             
+                                       
+                                        <div id="demo1" class="collapse">
+                                            <input type="datetime-local">  
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Gửi</button>                                       
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                    <!--End xem chi tiết công việc--> 
+                    <!--END modal -->
                 </div>
             </div>
         </div><!-- Main Col END -->

@@ -73,7 +73,7 @@
                                 <td>Viết báo cáo</td>
                                 <td>Trình bày báo cáo</td>
                                 <td>12:00</td>
-                                <td>Nguyễn Thị Hằng</td>
+                                <td>Lê Thị Hằng</td>
                                 <td>Canceled</td>
                                 <td class="text-primary">
                                     OK
@@ -112,12 +112,12 @@
                         </table>
                     </div>                   
                     <!--End nội dung task-->
-                    <!--chi tiết task-->
-                    <div>
+                    <!--chi tiết task-->                    
                     <div id="demo" class="collapse">
                         <div class="col p-4">           
                             <div class="card">
                                 <h5 class="card-header font-weight-light">Chi tiết công việc</h5>
+                                <!--Chi tiết của công việc-->
                                 <div class="card-body">
                                     <div class="container mt-3">                                                             
                                         <div class="container">                            
@@ -175,27 +175,116 @@
                                                 <div class="form-group">
                                                     File đính kèm: 
                                                     <a href="../NghiPhep/test.docx">Download!</a>
-                                                </div>   
-
-                                                <div class="form-group row">
-                                                    <div class="col-lg-2 col-12"> 
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#review">Review</button>
-                                                    </div>
-                                                    <div class="col-lg-2 col-12"> 
-                                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#duyet">Duyệt</button>
-                                                    </div>
-                                                    <div class="col-lg-8 col-12">                                                                
-                                                       <div>  </div>               
-                                                    </div>
-                                                </div>
+                                                </div>                                                                                        
                                             </form>
                                         </div>
+                                    </div>                                    
+                                </div>
+                                <!--END Chi tiết của công việc-->
+                                <hr> 
+
+                                <!--Lịch sử-->
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 border border-top-0 border-bottom-0 border-left-0">                                                                        
+                                        <!--Chi tiết thông tin mà trưởng phòng đã Rejected-->                                        
+                                        <div class="card-body">
+                                            <div class="container mt-3">                                                             
+                                                <div class="container">                            
+                                                    <form action="/action_page.php">
+                                                        <div class="form-group">                                    
+                                                            <h6>Lịch sử đánh giá của trưởng phòng</h6>
+                                                            <div class="form-group row">
+                                                                <div class="col-lg-6 col-12"> 
+                                                                    <label for="username">Lần: </label>
+                                                                    <input readonly value="1" name="username" id="username" type="text" class="form-control">
+                                                                </div>
+                                                                <div class="col-lg-6 col-12"> 
+                                                                    <label for="TenPB">Thời gian Rejected</label>
+                                                                    <input readonly value="22/10/2021 2:35 P.M" type="text" class="form-control" id="TebPB" name="TenPB">
+                                                                </div>
+                                                            </div>      
+
+                                                            <label for="mota">Nhận xét</label>                                                                                                                       
+                                                            <textarea readonly class="form-control" rows="5" id="mota">sacjkdsac cdasiew cdsioenjc dsijewjcj cdsajie</textarea>
+                                                        
+                                                            <div>
+                                                                <input type="checkbox" name="rememberMe" id="remenberMe">
+                                                                <label readonly for="rememberMe" checked>Được gia hạn deadline:</label>        
+                                                            </div>
+                                                            
+                                                        </div>     
+
+                                                        <div class="form-group">
+                                                            File đính kèm: 
+                                                            <a href="../NghiPhep/test.docx">Download!</a>
+                                                        </div>                                                   
+                                                                                                
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>                                
+                                        <!--END Chi tiết thông tin công viêc mà trưởng phòng đã review--> 
+                                    </div>                                    
+
+                                    <div class="col-lg-6 col-12"> 
+                                        <!--Chi tiết thông tin mà nhân viên gửi-->                                        
+                                        <div class="card-body">
+                                            <div class="container mt-3">                                                             
+                                                <div class="container">                            
+                                                    <form action="/action_page.php">
+                                                        <div class="form-group">                                    
+                                                            <h6>Lịch sử gửi báo cáo của nhân viên</h6>
+                                                            <div class="form-group row">
+                                                                <div class="col-lg-6 col-12"> 
+                                                                    <label for="username">Lần: </label>
+                                                                    <input readonly value="1" name="username" id="username" type="text" class="form-control">
+                                                                </div>
+                                                                <div class="col-lg-6 col-12"> 
+                                                                    <label for="TenPB">Thời gian Rejected</label>
+                                                                    <input readonly value="22/10/2021 2:35 P.M" type="text" class="form-control" id="TebPB" name="TenPB">
+                                                                </div>
+                                                            </div>      
+
+                                                            <label for="mota">Nhận xét</label>                                                                                                                       
+                                                            <textarea readonly class="form-control" rows="5" id="mota">csacdi usd hcdai caieni cdkencjeihjkdf dcdsa</textarea>
+                                                                                                                    
+                                                        </div>     
+
+                                                        <div class="form-group">
+                                                            File đính kèm: 
+                                                            <a href="../NghiPhep/test.docx">Download!</a>
+                                                        </div>                                                   
+                                                                                                
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>                                
+                                        <!--END Chi tiết thông tin công viêc mà trưởng phòng đã review--> 
                                     </div>
                                 </div>
+                                <!--END Lịch sử-->
+                                <hr>
+                                <!--buton duyệt và reivew-->
+                                <div class="card-body">                                                                                               
+                                    <div class="container">                                                
+                                        <div class="form-group row">
+                                            <div class="col-lg-2 col-12"> 
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#review">Review</button>
+                                            </div>
+                                            <div class="col-lg-2 col-12"> 
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#duyet">Duyệt</button>
+                                            </div>
+                                            <div class="col-lg-8 col-12">                                                                
+                                                <div>  </div>               
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <!--END buton duyệt và reivew-->
                             </div>
                         </div>
                     </div>
-                    <!--End chi tiết task-->
+                    <!--End chi tiết task-->                    
                     <!--
                         //---------------------------------------------------------------------------------------
                     -->
@@ -218,13 +307,21 @@
                                         <label for="mota">Tiến độ làm việc</label>                                                                                                                       
                                         <textarea class="form-control" rows="5" id="mota"></textarea>
                                         <br>
+                                        <!--
                                         <label for="file">Tập tin đính kèm:</label> 
                                         <input type="file" id="file-upload" required name="file" />
-                                        <br>  
-                                                                           
+                                        <br> 
+                                        --> 
+
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                        <br>
+                                        <br>
                                         <label data-toggle="collapse" data-target="#demo1">Gia hạn deadline:
                                             <input type="checkbox" value="">
-                                        </label> 
+                                        </label>                                         
                                         <div id="demo1" class="collapse">
                                             <input type="datetime-local">  
                                         </div>                                                                        

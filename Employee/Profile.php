@@ -40,6 +40,7 @@
                             <!--show avatar-->
                             <label for="imageFile">
                                 <img src="../images/avatar.png" id="image" alt="avatar" class="mr-3 mt-3 rounded-circle" style="width:150px;">
+                                
                             </label>
                             <input type="file" name="input-img" id="imageFile" style="display: none;" onchange="chooseFile(this)" accept="image/gif, image/jpeg, image/png"> 
                             
@@ -48,19 +49,19 @@
                             <!--proflie 1-->
                         </div>                        
                             <div class="container">                            
-                                <form action="/action_page.php">
+                                <form action="../ResetPassword.php">
                                     <div class="form-group">                                    
                                         <label for="username">Tên nhân viên</label>
                                         <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="Hihi Haha">
                                                                                                         
-                                        <label for="LoaiNV">Loại nhân viên</label>
+                                        <label for="LoaiNV">Loại nhân viên (chức vụ)</label>
                                         <input readonly value="" type="text" class="form-control" id="LoaiNV" placeholder="Giám đốc" name="LoaiNV">
 
-                                        <label for="username">Tên người dùng</label>
+                                        <label for="username">Tên người dùng:</label>
                                         <input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">
                                         
-                                        <label for="pass">Xác nhận mật khẩu</label>
-                                        <input value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
+                                        <label for="pass">Mật khẩu:</label>
+                                        <input readonly value="********" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
                                         <!--
 
                                          <div>
@@ -87,7 +88,7 @@
                                         <input readonly value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
 
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Lưu</button>
+                                    <button type="submit" class="btn btn-primary">Reset mật khẩu</button>
                                 </form>
                             </div>
                     </div>
@@ -180,9 +181,9 @@
             <div>
                 <h1>My First JavaScript</h1>
                 <button type="button"
-                onclick="document.getElementById('demo').innerHTML = Date()">
+                onclick="document.getElementById('demo1').innerHTML = Date()">
                 Click me to display Date and Time.</button>
-                <p id="demo"></p>
+                <p id="demo1"></p>
             </div>
     </div><!-- body-row END -->
 

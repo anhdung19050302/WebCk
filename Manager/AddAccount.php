@@ -45,7 +45,7 @@
                             <!--proflie 1-->
                         </div>                        
                             <div class="container">                            
-                                <form action="/action_page.php">
+                                <form action="../Manager/AccountManager.php">
                                     <div class="form-group">                                    
                                         <label for="username">Tên nhân viên</label>
                                         <input value="" name="username" id="username" type="text" class="form-control" placeholder="Tên Nhân viên">
@@ -60,8 +60,13 @@
                                         <input value="12345678" name="pass-confirm" required class="form-control" type="password" placeholder="Xác nhận mật khẩu" id="pass2">
                                        
                                         <label for="TenPB">Tên phòng ban</label>
-                                        <input value="" type="text" class="form-control" id="TebPB" placeholder="Quản lý nhân viên" name="TenPB">
-                                                       
+                                        <select class="form-control" id="soPhong" name="soPhong">
+                                            <option>phòng tài chính</option>
+                                            <option>phòng tài chính</option>
+                                            <option>phòng tài chính</option>
+                                            <option>phòng tài chính</option>
+                                        </select>
+
                                         <label for="soPhong">Số Phòng: </label>                                                                
                                         <select class="form-control" id="soPhong" name="soPhong">
                                             <option>PH208</option>

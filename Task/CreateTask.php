@@ -60,7 +60,7 @@
 
                                 <div class="form-group">
                                     <label for="file">Tập tin đính kèm:</label> 
-                                    <input type="file" id="file-upload" required name="file" />                                    
+                                    <input type="file" id="file-upload" required name="file" />                                                                 
                                     <button type="button" class="btn btn-primary" id='addfile' class="btn btn-default">Thêm File</button>
 
                                 </div>

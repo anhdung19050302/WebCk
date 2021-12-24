@@ -72,3 +72,16 @@ $('#txtNgayThangNamSinh').datepicker(
     END của CreateTask
 */
 //----------------------------------------------------------------------------------------------
+  /*
+ Phần code của TaskManager
+*/
+// Chức năng thêm file
+$(".custom-file-input").on("change", function() {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  });
+// <!-- Phần xử lý code JavaScript - END -->
+/*
+    END của CreateTask
+*/
+//----------------------------------------------------------------------------------------------

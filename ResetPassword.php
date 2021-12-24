@@ -51,7 +51,7 @@
 	<div class="row justify-content-center">
 		<div class="col-md-6 col-lg-5">
 			<h3 class="text-center text-primary mt-5 mb-3">Thay đổi mật khẩu</h3>
-			<form novalidate method="post" action="" class="border rounded w-100 mb-5 mx-auto px-3 pt-3 bg-light">
+			<form novalidate method="post" action="./Employee/Profile.php" class="border rounded w-100 mb-5 mx-auto px-3 pt-3 bg-light">
 				<div class="form-group">
 					<label for="username">Tên người dùng</label>
 					<input readonly value="" name="username" id="username" type="text" class="form-control" placeholder="username">

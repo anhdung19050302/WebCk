@@ -51,9 +51,9 @@
                                         <label for="tenNhanVien">Thời gian kết thúc:</label>                                                            
                                         <input type="date">
                                     </div>                                                           
-                                    <div class="col-lg-4 col-12">                                                                
-                                        <label for="tenNhanVien">Số ngày muốn nghỉ:</label>                                                            
-                                        <input readonly value="tự động tính" name="username" id="username" type="text" class="form-control" placeholder="số ngày muốn nghỉ">                           
+                                    <div class="col-lg-4 col-12">       
+                                        <span>Số ngày muốn nghỉ: </span>  
+                                        <span>Tự động tính</span>                                                                      
                                     </div>
                                 </div>                                                          
 
